@@ -1,18 +1,14 @@
 public class Main {
-    public static void main(String args[]){
-        int StartCheck = 100; // Начальный счет
-        int Sum_add = 1500; // Сумма пополнения баланса
-        int Bonus; //Бонус
-        if( Sum_add < 1000 ){
-            Bonus = 0;
-        }else{
-            Bonus = Sum_add / 100;
+    public static void main(String args[]) {
+        int startCheck = 100; // Начальный счет
+        int sumAdd = 1500; // Сумма пополнения баланса
+        int bonus; //Бонус
+        if (sumAdd < 1000) {
+            bonus = 0;
+        } else {
+            bonus = sumAdd / 100;
         }
-        System.out.print("Итого: ");
-        System.out.print(Sum_add+StartCheck+Bonus);
-        System.out.print(" руб.");
-        System.out.print(" Бонус: ");
-        System.out.print(Bonus);
-        System.out.print(" руб.");
+        int total = sumAdd + startCheck + bonus;
+        System.out.print("Итого: " + total + " руб; Бонус: " + bonus + " руб.");
     }
 }
